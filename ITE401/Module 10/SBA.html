@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day10 Activity</title>
+    <style>body {
+        font-family: Arial, sans-serif;
+        background-image: url(ride].avif);
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    
+    label {
+        font-size: 1.2em;
+        color: white;
+        margin-bottom: 5px;
+        display: block;
+    }
+    
+    select, input[type="date"] {
+        padding: 10px;
+        font-size: 1em;
+        background-color: rgba(22, 175, 180, 0.5);
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        border-radius: 5px;
+        margin-bottom: 20px;
+        width: 300px;
+        text-align: center;
+        backdrop-filter: blur(5px);
+    }
+    
+    select:focus, input[type="date"]:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
+}
+    
+    @media (max-width: 600px) {
+        select, input[type="date"] {
+            width: 100%;
+        }
+    }
+    </style>
+    </style>
+</head>
+<body>
+    <label for="city">Select a Country: </label>
+    <select id="city" name="city">
+        <option value="iloilo city">Philippines</option>
+        <option value="guimaras">France</option>
+        <option value="roxas">United States</option>
+        <option value="antique">Japan</option>
+    </select>
+    <br>
+    <br>
+    <label for="date">Select a Date: </label>
+    <input type="date" id="date" name="date">
+</body>
+</html>
